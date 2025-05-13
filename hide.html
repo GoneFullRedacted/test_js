@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hide.css">
+</head>
+<body>
+    <button id="btn1">Le bloc est invisible</button>
+    <p id="textblock" class="hidden">Le bloc de texte</p>
+
+    <script>
+
+
+        let text = document.getElementById("textblock");
+        let btn = document.getElementById("btn1");
+
+        btn.addEventListener('click', function(){
+
+            text.classList.toggle("hidden");
+
+            btn.innerHTML = text.classList.contains("hidden") ? "Afficher" : "Cacher";
+
+        });
+
+        
+    </script>
+</body>
+</html>

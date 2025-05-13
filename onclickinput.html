@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Votre ville" id="inpt">
+    <button id="btn">Cliquez</button>
+    <p id="res"></p>
+
+
+
+    <script>
+        
+        let bouton = document.getElementById('btn')
+        let resu = document.getElementById('res')
+
+        bouton.addEventListener('click', function(){
+            let inpout = document.getElementById('inpt').value
+            res.innerHTML = inpout
+        })
+    </script>
+</body>
+</html>
