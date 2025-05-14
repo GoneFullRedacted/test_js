@@ -5,10 +5,10 @@ window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
 
   if (currentScroll > previousScroll) {
-    // Scroll vers le bas → cacher la navbar
-    navbar.style.top = "-60px"; // Ajuste si ta navbar est plus haute
+    
+    navbar.style.top = "-60px"; 
   } else {
-    // Scroll vers le haut → montrer la navbar
+    
     navbar.style.top = "0";
   }
 

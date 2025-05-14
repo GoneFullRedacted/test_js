@@ -8,4 +8,11 @@ boutton.addEventListener('click', function(){
     let coin = Math.floor(lancer * 2)
 
     resultat.innerHTML = coin == 1 ? "Face" : "Pile" ;
+
+
+    if coin == 1 {
+        resultat.innerHTML = "face"
+    } else {
+        resultat.innerHTML = "Pile"
+    }
 })
